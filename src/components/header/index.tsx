@@ -5,10 +5,11 @@ import {
   Briefcase,
   MagnifyingGlass,
   SignOut,
-  Square,
 } from "@phosphor-icons/react";
 
+import perfil from "../../assets/teste1.jpg";
 import { useState } from "react";
+import Rectangle from "../../assets/Rectangle.png";
 
 import styles from "./header.module.css";
 
@@ -44,12 +45,17 @@ export function Header() {
     setInicio(false);
   }
 
+  function ChamarPerfil() {
+    setUsuario(usuario + 1);
+  }
+
   const [search, setSearch] = useState(1);
   const [inicio, setInicio] = useState(false);
   const [vaga, setVaga] = useState(false);
   const [msg, setMsg] = useState(false);
   const [not, setNot] = useState(false);
 
+  const [usuario, setUsuario] = useState(0);
   return (
     <>
       <header className={styles.container}>
@@ -124,11 +130,28 @@ export function Header() {
           <p>
             <SignOut size={32} />
           </p>
-          <p>
-            <Square size={32} />
-          </p>
+          <img
+            onClick={ChamarPerfil}
+            className={styles.buttonPerfil}
+            src={perfil}
+          />
         </section>
       </header>
+      <main className={styles.body}>
+        {usuario % 2 === 0 ? (
+          <div> </div>
+        ) : (
+          <div className={styles.usuario}>
+            <img src={Rectangle} />
+            <section>
+              <img className={styles.ImgPerfil} src={perfil} />
+              <h2>Caio Vinicius</h2>
+              <h4>Ui Designer</h4>
+              <button> Ver Perfil </button>
+            </section>
+          </div>
+        )}
+      </main>
     </>
   );
 }

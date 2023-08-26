@@ -44,7 +44,7 @@ p {
 }
 .azulzin {
   height: 5px;
-  width: 135px;
+  width: 142px;
   margin-bottom: 0;
   background: #00bfff;
   margin-top: 20px;
@@ -57,6 +57,50 @@ p {
   background: #000;
   border: none;
   color: #ffff;
+}
+
+.body {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  padding: 20px 10px;
+}
+.buttonPerfil {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #00bfff;
+  cursor: pointer;
+}
+.usuario {
+  width: 300px;
+  height: 300px;
+  background: #333333;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+}
+.usuario h2 {
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+.usuario h4 {
+  font-size: 10px;
+}
+.usuario button {
+  margin-top: 20px;
+  width: 70px;
+  height: 40px;
+  border-radius: 3px;
+  border: 2px solid #00bfff;
+  background: #333333;
+  color: #00bfff;
+}
+.ImgPerfil {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #00bfff;
 }
 @media (max-width: 600px) {
   .container {
@@ -101,7 +145,7 @@ p {
   }
   .input {
     height: 30px;
-    width: 120px;
+    width: 140px;
     font-size: 8px;
     margin-right: 5px;
   }
@@ -124,5 +168,29 @@ p {
   }
   .container p {
     gap: 0px;
+  }
+  .usuario {
+    width: 164px;
+    height: 160px;
+  }
+  .usuario h2 {
+    font-size: 9px;
+  }
+  .usuario h4 {
+    font-size: 7px;
+  }
+  .usuario button {
+    width: 40px;
+    height: 20px;
+    font-size: 7px;
+    margin-top: 12px;
+  }
+  .buttonPerfil {
+    width: 20px;
+    height: 20px;
+  }
+  .ImgPerfil {
+    width: 38px;
+    height: 38px;
   }
 }
