@@ -1,17 +1,13 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Home } from "./Pages/Home";
-import { NotFound } from "./Pages/Erro";
-import { Detail } from "./Pages/Datail";
 import { Layout } from "./components/layout";
+import { Header } from "./components/header";
 
 function Rotas() {
   return (
     <BrowserRouter>
       <Layout>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/detail" element={<Detail />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="/" element={<Header />} />
         </Routes>
       </Layout>
     </BrowserRouter>
