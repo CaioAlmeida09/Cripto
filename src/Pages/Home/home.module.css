@@ -1,0 +1,10 @@
+.container {
+  width: 100vw;
+}
+.form {
+  display: flex;
+}
+
+input {
+  margin-top: 200px;
+}

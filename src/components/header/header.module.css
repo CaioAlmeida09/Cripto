@@ -1,0 +1,128 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 89px;
+  width: 100vw;
+  color: aliceblue;
+  gap: 20%;
+  background: #333333;
+  padding: 0 10px;
+}
+.centro {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.DivCentro {
+  display: flex;
+  flex-direction: column;
+}
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 25px;
+}
+h2 {
+  font-weight: bold;
+}
+p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  cursor: pointer;
+}
+.azul {
+  height: 5px;
+  width: 100px;
+  margin-bottom: 0;
+  background: #00bfff;
+  margin-top: 20px;
+}
+.azulzin {
+  height: 5px;
+  width: 135px;
+  margin-bottom: 0;
+  background: #00bfff;
+  margin-top: 20px;
+}
+.input {
+  width: 500px;
+  height: 50px;
+  font-size: 17px;
+  padding: 10px;
+  background: #000;
+  border: none;
+  color: #ffff;
+}
+@media (max-width: 600px) {
+  .container {
+    width: 100vw;
+    gap: 0px;
+    height: 70px;
+    padding: 2px 8px;
+    justify-content: space-between;
+  }
+  .container h2 {
+    font-size: 8px;
+  }
+  .container p svg {
+    height: 13px;
+    height: 13px;
+  }
+  .container p {
+    font-size: 7px;
+    gap: 0px;
+  }
+  .centro {
+    display: flex;
+    gap: 0px;
+  }
+  .azul {
+    width: 40px;
+    height: 3px;
+    margin-left: 11px;
+  }
+  .azulzin {
+    width: 59px;
+    margin-left: 11px;
+    height: 3px;
+  }
+  .right {
+    gap: 0px;
+    font-size: 8px;
+  }
+  .right p svg {
+    height: 15px;
+    width: 15px;
+  }
+  .input {
+    height: 30px;
+    width: 120px;
+    font-size: 8px;
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 415px) {
+  .container {
+    gap: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .centro {
+    gap: 0px;
+  }
+  .centro p {
+    gap: 0px;
+  }
+  .right {
+    gap: 4px;
+  }
+  .container p {
+    gap: 0px;
+  }
+}
