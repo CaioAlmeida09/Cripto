@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import Rotas from "./routes.tsx";
+import { Header } from "./components/header";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <Rotas />
+    <Header />
   </React.StrictMode>
 );
